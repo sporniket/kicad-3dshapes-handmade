@@ -29,12 +29,24 @@ Content
 
 ## 3. How to use **Sporniket's handmade 3D shapes for Kicad** ?
 
-### From source
+### From source, outside of your Kicad project folder
+
 To get the latest available models, one must clone the git repository.
 
 	git clone https://github.com/sporniket/kicad-3dshapes-handmade.git
 
-Then, the Kicad project must be configured to find those models. One solution would be to clone **Sporniket's handmade 3D shapes for Kicad** directly inside the project folder. If the project is already inside a git repository, clone **Sporniket's handmade 3D shapes for Kicad** as a submodule.
+Then, the Kicad project must be configured to find those models.
+
+### From source, inside of a Kicad project folder tracked by git
+
+To make a Kicad project easily clonable, one solution would be to clone **Sporniket's handmade 3D shapes for Kicad** directly inside the project folder.
+
+If the project is already inside a git repository, clone **Sporniket's handmade 3D shapes for Kicad** as a submodule.
+
+	cd .../your/kicad/project/folder
+	git submodule add https://github.com/sporniket/kicad-3dshapes-handmade
+
+See the [git page on submodule](https://git-scm.com/book/fr/v2/Utilitaires-Git-Sous-modules) to get at ease with this kind of use.
 
 ## 4. Known issues
 See the [project issues](https://github.com/sporniket/kicad-3dshapes-handmade/issues) page.
